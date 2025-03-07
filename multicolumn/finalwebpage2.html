@@ -1,0 +1,389 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>multicolumnwebpagepage2</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<style type="text/css">
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			/*  ===========END CSS RESET=========== */
+			
+			// <weight>: Use a value from 400 to 700
+			// <uniquifier>: Use a unique and descriptive class name
+
+			.lora-<uniquifier> {
+			font-family: "Lora", serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			}
+			.poppins-regular {
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			}
+			/*  ===========END TYPE STYLES=========== */
+			
+		 	body{
+				font-family: "Lora", serif;
+			}
+			h2, h3, h4{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				margin: 5% 0% 3% 0%;
+			}
+			h1{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				font-size: 2em;
+				font-weight: 700;
+				padding: 2.5%;
+			}
+			h2{
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			#wrapper{
+				width: 80.56640625%; /*target - 825px/1024px*/
+				margin: 0 auto;
+				background-color: #2F7366;
+			}
+			nav{
+				margin: 0 auto;
+				text-align: center;
+				justify-content: space-evenly;
+				background-color: #2F7366;
+				padding-top: .25%;
+			}
+			header{
+				background-color: #6DA398;
+				padding: .1%;
+				margin-bottom: .01%;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				color: #001511;
+				letter-spacing: .2em;
+			}
+			.nav-item{
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+				border: 1px solid;
+				padding: .5% 8.74%;
+				margin-bottom: .25%;
+				font-weight: bold; 
+				justify-content: space-evenly;
+				font-size: 1em;
+				background-color: #2F3D3B;
+
+				
+			}
+			li.nav-item a:link{
+				color: #B4744A;
+			}
+			li.nav-item a:visited{
+				color: #8E4F26;
+			}
+			li.nav-item a:hover{
+				color: white;
+			}
+			li.nav-item a:active{
+				color: black;
+				text-align: center;
+			}
+			ul{ 
+				width: 100%; /*706/825*/
+				margin: 0 auto;
+				padding: 0;
+			}
+
+			#feature{
+				width: 81.3257575757575758%;
+				padding: .75% 2.25% 3.5% 2.25%;
+				margin: 0 auto;
+				margin-top: 0;
+				margin-bottom: 2%;
+				background-color: #6DA398;
+				overflow: hidden;
+				color: #001511;
+			}
+			.feature-img{
+				float: left;
+				width: 20%;
+				clear: left;
+			}
+			.feature-text, ol{
+				width: 65%;
+				padding: 1.5%;
+				font-size: 1.5em;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: .01em;
+			}
+			.feature-text, ol{
+			margin: 0 auto;
+			padding-left: 12%
+			}
+			#feature h2{ 
+				margin: 1% auto;
+				letter-spacing: .025em;
+				text-align: center;
+				padding-left: 10%
+				width: 30%;
+			}
+			#feature h2 {
+			margin: 1% auto;
+			letter-spacing: .025em;
+			text-align: center;
+			padding-left: 10%; /* Remove padding if it's conflicting */
+			width: 60%; /* Adjust the width as needed */
+			}
+			#feature ol{
+				clear: none;
+				text-align: center;
+			}
+			p{
+				margin: 1.5% 0%;
+				letter-spacing: .01em;
+				line-height: 120%;
+				text-align: center;
+				font-size: 1.5em;
+			}
+			#maincontent{
+				width:59.39393939394%; /*523/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			.main-figure{
+				width: 32.50478011472%; /*170/523*/
+				margin-right: 9.56022944551%; /*50/523*/
+				float: right;
+				max-width: 100%;
+				margin: 1% 0% 2.5% 3%;
+				
+			}
+			#sidebar{
+				width: 32.60606060606061%; /*302/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			#sidebar p{
+				padding-top: 4%;
+			}
+			#maincontent p{
+				padding-top: 4%;
+			}
+			.side-figure{
+				width: 88.07947019868%; /*266/302*/
+				margin: 0 auto;
+			}
+			figure img{
+				max-width: 100%;
+			}
+			figcaption{
+				padding: 3%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			figure{
+				background-color: #002A21;
+			}
+			footer{
+				clear: left;
+				padding: .5% 0%;
+				text-align: center;
+				background-color: #6DA398;
+			}
+			body{
+				background-color: #202020;
+			}
+			figcaption{
+				font-size: .8em;
+			}
+			.clear{
+				clear: both;
+			}
+			table, caption{ 
+				background-color: grey;
+				margin: auto; 
+				border: 1px solid;
+				border-color: darkgrey;
+				font-size: 100%;
+				line-height: 120%;
+				letter spacing: .01em;
+				font-size: 1.25em;
+				text-align: center;
+				padding: 1%;
+			}
+			th{
+				font-size: 1.15em;
+				line-height: 120%;
+				letter spacing: .01em;
+				margin: 3% auto;
+				font-weight: 500;
+			}
+
+
+		</style>
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Jackson Neighbors' Favorite Movies - The Godfather</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="nav-item"><a href="finalwebpage1.html">page 1</a></li>
+				<li class="nav-item"><a href="finalwebpage3.html">page 3</a></li>
+				<li class="nav-item"><a href="finalwebpage4.html">page 4</a></li>
+				<li class="nav-item"><a href="finalwebpage5.html">page 5</a></li>
+			</ul>
+		</nav>
+		<div id="feature">
+			<h2>The Godfather Poster and Synopsis</h2>
+			
+			<img src="thegodfather.png" class="feature-img"/>
+			
+			<p class="feature-text">
+				Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.
+			</p>
+				<table>
+			<caption>Godfather Trilogy Ratings</caption>
+			<thead>
+				<tr>
+					<th>Movie</th>
+					<th>IMDB Rating</th>
+					<th>Letterboxd Rating</th>
+					<th>Rotten Tomato Score</th>
+					<th>Meta Critic Score</th>
+					
+				</tr>
+			</thead>
+			<tfoot>	
+				<tr>
+					<td colspan="5">I love the first and second parts, but I refuse to watch the third.</td>
+				</tr>
+			</tfoot>
+				<tbody>
+					<tr bgcolor="darkgrey">
+						<td>The Godfather pt. I</td>
+						<td>9.2/10</td>
+						<td>4.5/5</td>
+						<td>97%</td>
+						<td>9.3/10</td>
+					</tr>
+					<tr bgcolor="darkgrey">
+						<td>The Godfather pt. II</td>
+						<td>9.0</td>
+						<td>4.6/5</td>
+						<td>96%</td>
+						<td>9.1/10</td>
+					</tr>
+					<tr bgcolor="darkgrey">
+						<td>The Godfather pt. III</td>
+						<td>7.6/10</td>
+						<td>3.5/5</td>
+						<td>66%</td>
+						<td>7.2/10</td>
+					</tr>
+				</tbody>
+		</table>l>	
+			
+		</div>
+		<div id="maincontent">
+			<article>
+			<h2>Movie Review</h2>
+			<figure class="main-figure">
+				<img src="thesquarefather.png"/>
+				<figcaption>
+					Al Pacino portraying Michael Corleone
+				</figcaption>
+			</figure>
+			<p>
+				The Godfather is one of those films that you can watch over and over again and still find something new to appreciate each time. Directed by Francis Ford Coppola, it’s a story about power, family, and loyalty, but it’s also a deep look into the consequences of those things. Marlon Brando's performance as Vito Corleone is unforgettable—he brings a quiet, almost terrifying authority to the role, but there’s also a sense of vulnerability, especially when it comes to his family. The way Coppola blends those qualities makes Vito one of the most memorable characters in film history.
+			</p>
+			<p>
+				The film’s atmosphere is a huge part of what makes it so compelling. The cinematography is dark and moody, using shadows and close-ups to emphasize the tension between characters. The pacing is also perfect, giving enough time for the story to breathe before the intense moments hit. Every scene feels deliberate and builds up to something, whether it’s a quiet conversation or a brutal act of violence. It’s this mix of quiet and loud, slow and fast, that keeps you on the edge of your seat.
+			</p>
+			<p>
+				What makes The Godfather truly stand the test of time is its storytelling. It’s not just about mobsters and crime—it’s about the choices we make and the people we become because of them. Coppola takes a familiar genre and turns it into something more complex and layered. It’s a film that doesn’t just entertain but makes you think about loyalty, family, and power in a way that few movies can.
+			</p>
+			</article>
+		</div>
+		<div id="sidebar">
+		<article>
+			<h2>Director</h2>
+			<figure class ="side-figure">
+				<img src="ffccircle.png" />
+				<figcaption>
+					Francis Ford Coppola directing The Godfather Pt. 2.
+				</figcaption>
+			</figure>
+			<p>
+				Francis Ford Coppola is a director who mastered the art of storytelling with a focus on family, power, and moral dilemmas. Best known for The Godfather trilogy, Coppola has a way of drawing audiences into complex characters and their internal struggles, often set against the backdrop of large, sweeping stories. His ability to balance intimate moments with grand, sweeping narratives is a big part of what makes his films so impactful. Whether it's the Corleone family's rise and fall or the haunting transformation of Michael, Coppola creates films that feel timeless. What really sets him apart is how he captures the human condition—how ambition and loyalty can tear people apart, yet keep them together.
+			</p>
+		</article>
+		</div>
+		<footer>
+			<p><small>Copyright Jackson Neighbors, 2025</small></p>
+		</footer>
+	</div>
+
+</body>
+</html>

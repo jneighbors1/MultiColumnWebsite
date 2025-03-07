@@ -1,0 +1,337 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>multicolumnwebpagepage5</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<style type="text/css">
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			/*  ===========END CSS RESET=========== */
+			
+			// <weight>: Use a value from 400 to 700
+			// <uniquifier>: Use a unique and descriptive class name
+
+			.lora-<uniquifier> {
+			font-family: "Lora", serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			}
+			.poppins-regular {
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			}
+			/*  ===========END TYPE STYLES=========== */
+			
+		 	body{
+				font-family: "Lora", serif;
+			}
+			h2, h3, h4{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				margin: 5% 0% 3% 0%;
+			}
+			h1{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				font-size: 2em;
+				font-weight: 700;
+				padding: 2.5%;
+			}
+			h2{
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			#wrapper{
+				width: 80.56640625%; /*target - 825px/1024px*/
+				margin: 0 auto;
+				background-color: #2F7366;
+			}
+			nav{
+				margin: 0 auto;
+				text-align: center;
+				justify-content: space-evenly;
+				background-color: #2F7366;
+				padding-top: .25%;
+			}
+			header{
+				background-color: #6DA398;
+				padding: .1%;
+				margin-bottom: .01%;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				color: #001511;
+				letter-spacing: .2em;
+			}
+			.nav-item{
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+				border: 1px solid;
+				padding: .5% 8.74%;
+				margin-bottom: .25%;
+				font-weight: bold; 
+				justify-content: space-evenly;
+				font-size: 1em;
+				background-color: #2F3D3B;
+
+				
+			}
+			li.nav-item a:link{
+				color: #B4744A;
+			}
+			li.nav-item a:visited{
+				color: #8E4F26;
+			}
+			li.nav-item a:hover{
+				color: white;
+			}
+			li.nav-item a:active{
+				color: black;
+				text-align: center;
+			}
+			
+
+			#feature{
+				width: 81.3257575757575758%;
+				padding: .75% 2.25% 3.5% 2.25%;
+				margin: 0 auto;
+				margin-top: 0;
+				margin-bottom: 2%;
+				background-color: #6DA398;
+				overflow: hidden;
+				color: #001511;
+			}
+			.feature-img{
+				float: left;
+				width: 20%;
+				clear: left;
+			}
+			.feature-text, ol{
+				width: 65%;
+				padding: 1.5%;
+				font-size: 1.5em;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: .01em;
+			}
+			.feature-text, ol{
+			margin: 0 auto;
+			padding-left: 12%
+			}
+			#feature h2{ 
+				margin: 1% auto;
+				letter-spacing: .025em;
+				text-align: center;
+				padding-left: 10%
+				width: 30%;
+			}
+			#feature h2 {
+			margin: 1% auto;
+			letter-spacing: .025em;
+			text-align: center;
+			padding-left: 10%; /* Remove padding if it's conflicting */
+			width: 60%; /* Adjust the width as needed */
+			}
+			#feature ol{
+				clear: none;
+				text-align: center;
+			}
+			p{
+				margin: 1.5% 0%;
+				letter-spacing: .01em;
+				line-height: 120%;
+				text-align: center;
+				font-size: 1.5em;
+			}
+			#maincontent{
+				width:59.39393939394%; /*523/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			.main-figure{
+				width: 32.50478011472%; /*170/523*/
+				margin-right: 9.56022944551%; /*50/523*/
+				float: right;
+				max-width: 100%;
+				margin: 1% 0% 2.5% 3%;
+				
+			}
+			#sidebar{
+				width: 32.60606060606061%; /*302/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			#sidebar p{
+				padding-top: 4%;
+			}
+			#maincontent p{
+				padding-top: 4%;
+			}
+			.side-figure{
+				width: 88.07947019868%; /*266/302*/
+				margin: 0 auto;
+			}
+			figure img{
+				max-width: 100%;
+			}
+			figcaption{
+				padding: 3%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			figure{
+				background-color: #002A21;
+			}
+			footer{
+				clear: left;
+				background-color: red;
+				padding: .5% 0%;
+				text-align: center;
+				background-color: #6DA398;
+			}
+			body{
+				background-color: #202020;
+			}
+			figcaption{
+				font-size: .8em;
+			}
+			.clear{
+				clear: both;
+			}
+			.inline-links a{
+				display: inline-block;
+				background-color: darkgrey;
+				padding: 1%;
+				margin: 4%;
+				margin-left: 1%;
+				font-size: 1.5em;
+				letter-spacing: .025em
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Jackson Neighbors' Favorite Movies - City of God</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="nav-item"><a href="finalwebpage1.html">page 1</a></li>
+				<li class="nav-item"><a href="finalwebpage2.html">page 2</a></li>
+				<li class="nav-item"><a href="finalwebpage3.html">page 3</a></li>
+				<li class="nav-item"><a href="finalwebpage4.html">page 4</a></li>
+			</ul>
+		</nav>
+		<div id="feature">
+			<h2>City of God Poster and Synopsis</h2>
+			
+			<img src="cityofgod.png" class="feature-img"/>
+			
+			<p class="feature-text">
+				In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.
+			</p>
+				<h2>Content</h2>
+				<p class="inline-links">
+					<a href="https://www.youtube.com/watch?v=ktK2p6wtUCU">City of God Trailer</a>
+					<a href="https://www.youtube.com/watch?v=htcpr6VcLhI">City of God Film Analysis</a>
+				</p>
+		</div>
+		<div id="maincontent">
+			<article>
+			<h2>Movie Review</h2>
+			<figure class="main-figure">
+				<img src="cogcrop.png"/>
+				<figcaption>
+					Alexandre Rodrigues in his gripping portrayal of 'Rocket'
+				</figcaption>
+			</figure>
+			<p>
+				City of God (2002) is a gritty, powerful crime drama that takes you deep into the favelas of Rio de Janeiro. Directed by Fernando Meirelles, it follows Rocket, a young guy trying to escape the brutal world of drug gangs while navigating life in a place where violence is a part of daily life. The film weaves together different stories, showing how the lives of gang leaders and innocent bystanders are shaped by the dangers around them.
+			</p>
+			<p>
+				Meirelles’ direction is sharp, using fast editing and dynamic camerawork to put you right in the middle of the action. The film also stands out because of its use of non-professional actors, which gives everything an authentic, raw feeling. You really feel the pressure and tension of the environment, and it’s impossible not to get sucked into the chaos of the favelas.
+			</p>
+			<p>
+				What makes City of God so unforgettable is the way it highlights the cycle of poverty and violence, and how hard it is for people to break free from it. It’s not just a crime story—it’s a commentary on a broken system. The film doesn’t hold back, and by the end, you’re left thinking about the choices people make and the circumstances that shape their lives, long after the credits roll.
+			</p>
+			</article>
+		</div>
+		<div id="sidebar">
+		<article>
+			<h2>Director</h2>
+			<figure class ="side-figure">
+				<img src="cogdir.png" />
+				<figcaption>
+					Dir. Fernando Meirelles on the set of 'City of God'
+				</figcaption>
+			</figure>
+			<p>
+				Fernando Meirelles is the kind of director who really pulls you into his films with an intense, in-your-face style. He’s all about using quick edits and sharp visuals to make you feel like you're right there in the middle of the action. Meirelles isn’t afraid to dive into tough topics, and he does it in a way that feels real and raw. What’s great about his work is how he brings out these complicated characters and shows you the messy side of life, making you think long after the movie ends. It’s the kind of filmmaking that stays with you.
+			</p>
+		</article>
+		</div>
+		<footer>
+			<p><small>Copyright Jackson Neighbors, 2025</small></p>
+		</footer>
+	</div>
+
+</body>
+</html>

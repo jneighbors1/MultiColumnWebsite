@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>multicolumnwebpagepage4</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	
+		<style type="text/css">
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			/*  ===========END CSS RESET=========== */
+			
+			// <weight>: Use a value from 400 to 700
+			// <uniquifier>: Use a unique and descriptive class name
+
+			.lora-<uniquifier> {
+			font-family: "Lora", serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			}
+			.poppins-regular {
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			}
+			/*  ===========END TYPE STYLES=========== */
+			
+		 	body{
+				font-family: "Lora", serif;
+			}
+			h2, h3, h4{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				margin: 5% 0% 3% 0%;
+			}
+			h1{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				font-size: 2em;
+				font-weight: 700;
+				padding: 2.5%;
+			}
+			h2{
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			#wrapper{
+				width: 80.56640625%; /*target - 825px/1024px*/
+				margin: 0 auto;
+				background-color: #2F7366;
+			}
+			nav{
+				margin: 0 auto;
+				text-align: center;
+				justify-content: space-evenly;
+				background-color: #2F7366;
+				padding-top: .25%;
+			}
+			header{
+				background-color: #6DA398;
+				padding: .1%;
+				margin-bottom: .01%;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				color: #001511;
+				letter-spacing: .2em;
+			}
+			.nav-item{
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+				border: 1px solid;
+				padding: .5% 8.74%;
+				margin-bottom: .25%;
+				font-weight: bold; 
+				justify-content: space-evenly;
+				font-size: 1em;
+				background-color: #2F3D3B;
+
+				
+			}
+			li.nav-item a:link{
+				color: #B4744A;
+			}
+			li.nav-item a:visited{
+				color: #8E4F26;
+			}
+			li.nav-item a:hover{
+				color: white;
+			}
+			li.nav-item a:active{
+				color: black;
+				text-align: center;
+			}
+			ul{ 
+				width: 100%; /*706/825*/
+				margin: 0 auto;
+				padding: 0;
+			}
+
+			#feature{
+				width: 81.3257575757575758%;
+				padding: .75% 2.25% 3.5% 2.25%;
+				margin: 0 auto;
+				margin-top: 0;
+				margin-bottom: 2%;
+				background-color: #6DA398;
+				overflow: hidden;
+				color: #001511;
+			}
+			.feature-img{
+				float: left;
+				width: 20%;
+				clear: left;
+			}
+			.feature-text,{
+				width: 65%;
+				padding: 1.5%;
+				font-size: 1.5em;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: .01em;
+			}
+			.feature-text, ol{
+			margin: 0 auto;
+			padding-left: 12%
+			}
+			#feature h2{ 
+				margin: 1% auto;
+				letter-spacing: .025em;
+				text-align: center;
+				padding-left: 10%
+				width: 30%;
+			}
+			#feature h2 {
+			margin: 1% auto;
+			letter-spacing: .025em;
+			text-align: center;
+			padding-left: 10%; /* Remove padding if it's conflicting */
+			width: 60%; /* Adjust the width as needed */
+			}
+			#feature ol{
+				clear: none;
+				text-align: center;
+			}
+			p{
+				margin: 1.5% 0%;
+				letter-spacing: .01em;
+				line-height: 120%;
+				text-align: center;
+				font-size: 1.5em;
+			}
+			#maincontent{
+				width:59.39393939394%; /*523/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			.main-figure{
+				width: 32.50478011472%; /*170/523*/
+				margin-right: 9.56022944551%; /*50/523*/
+				float: right;
+				max-width: 100%;
+				margin: 1% 0% 2.5% 3%;
+				
+			}
+			#sidebar{
+				width: 32.60606060606061%; /*302/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			#sidebar p{
+				padding-top: 4%;
+			}
+			#maincontent p{
+				padding-top: 4%;
+			}
+			.side-figure{
+				width: 88.07947019868%; /*266/302*/
+				margin: 0 auto;
+			}
+			figure img{
+				max-width: 100%;
+			}
+			figcaption{
+				padding: 3%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			figure{
+				background-color: #002A21;
+			}
+			footer{
+				clear: left;
+				background-color: red;
+				padding: .5% 0%;
+				text-align: center;
+				background-color: #6DA398;
+			}
+			body{
+				background-color: #202020;
+			}
+			figcaption{
+				font-size: .8em;
+			}
+			.clear{
+				clear: both;
+			}
+			blockquote{
+				font-size: 1.75em;
+				font-family: "Poppins", sans-serif;
+				line-height: 120%;
+				letter-spacing: .01%;
+				width: 52%;
+				margin: 0% % auto;
+				padding: 2.5%;
+				text-align: center;
+				background-color: darkgrey;
+				margin-right: 15%;
+				border-left: 4px solid;
+				float: right; 
+			}
+			blockquote:before{
+			line-height: 0;
+			vertical-align: -.4em;
+				font-size: 4em;
+				content: "\201C";
+				
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Jackson Neighbors' Favorite Movies - Do The Right Thing</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="nav-item"><a href="finalwebpage1.html">page 1</a></li>
+				<li class="nav-item"><a href="finalwebpage2.html">page 2</a></li>
+				<li class="nav-item"><a href="finalwebpage3.html">page 3</a></li>
+				<li class="nav-item"><a href="finalwebpage5.html">page 5</a></li>
+			</ul>
+		</nav>
+		<div id="feature">
+			<h2>Do The Right Thing Poster and Synopsis</h2>
+			
+			<img src="dotherightthing.png" class="feature-img"/>
+			
+			<p class="feature-text">
+				Salvatore “Sal” Fragione is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin’ Out, becomes upset when he sees that the pizzeria’s Wall of Fame exhibits only Italian actors. Buggin’ Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin’ Out and to other people in the neighborhood, and tensions rise.
+			</p>
+				<h2>Famous Quote:</h2>
+					<blockquote>
+						One hand is always fighting the other hand, and the left hand is kicking much ass. I mean, it looks like the right hand, Love, is finished. But hold on, stop the presses, the right hand is coming back.
+					</blockquote>
+			
+		</div>
+		<div id="maincontent">
+			<article>
+			<h2>Movie Review</h2>
+			<figure class="main-figure">
+				<img src="radiorakeem.png"/>
+				<figcaption>
+					Tom Cruise and his incredible performance playing 'Frank TJ Mackey.'
+				</figcaption>
+			</figure>
+			<p>
+				Do the Right Thing (1989) is Spike Lee’s intense, thought-provoking exploration of racial tension in a Brooklyn neighborhood on one hot summer day. The film dives deep into the lives of its characters, each representing different sides of the racial divide, and shows how small frustrations can build up into something explosive. The heat in the air isn’t just physical—it’s an emotional pressure cooker. Lee captures that feeling perfectly with vibrant colors and a pace that keeps everything simmering until it boils over.
+			</p>
+			<p>
+				The performances are fantastic, especially Danny Aiello as Sal, the pizzeria owner who’s stuck in the middle of the conflict, and Lee himself as Mookie, whose actions end up playing a major role in the film’s explosive climax. You really feel the tension in every interaction, and that’s what makes the ending so impactful—it’s inevitable but still gut-wrenching.
+			</p>
+			<p>
+				Lee’s direction is spot on, using visuals and music to build tension and urgency. The heat of the day mirrors the growing racial and social frustrations, with Public Enemy’s “Fight the Power” fueling the anger. Lee’s storytelling isn’t just in the dialogue—his visuals drive the film toward its intense climax. Do the Right Thing stays with you, prompting reflection on race, personal choices, and the complex nature of doing what’s right in a world full of injustice.
+			</p>
+			</article>
+		</div>
+		<div id="sidebar">
+		<article>
+			<h2>Director</h2>
+			<figure class ="side-figure">
+				<img src="spikecropped.png" />
+				<figcaption>
+					Spike Lee on set of Do The Right Thing (1988)
+				</figcaption>
+			</figure>
+			<p>
+				Spike Lee is a director who doesn’t hold back. His films tackle tough topics like race, identity, and social justice head-on, using his unique style to make a real impact. Lee’s direction is bold and his camera work often brings energy and emotion to every scene. He’s not afraid to make people uncomfortable, pushing the audience to think deeply about the world around them. Lee's films stand out because he blends powerful storytelling with strong visuals, making sure his message resonates long after the movie ends.
+			</p>
+		</article>
+		</div>
+		<footer>
+			<p><small>Copyright Jackson Neighbors, 2025</small></p>
+		</footer>
+	</div>
+
+</body>
+</html>

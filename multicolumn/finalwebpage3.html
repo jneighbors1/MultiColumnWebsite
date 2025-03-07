@@ -1,0 +1,343 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>multicolumnwebpagepage3</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<style type="text/css">
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			/*  ===========END CSS RESET=========== */
+			
+			// <weight>: Use a value from 400 to 700
+			// <uniquifier>: Use a unique and descriptive class name
+
+			.lora-<uniquifier> {
+			font-family: "Lora", serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+			}
+			.poppins-regular {
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			}
+			/*  ===========END TYPE STYLES=========== */
+			
+		 	body{
+				font-family: "Lora", serif;
+			}
+			h2, h3, h4{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				margin: 5% 0% 3% 0%;
+			}
+			h1{
+				font-family: "Poppins", sans-serif;	
+				text-align: center;
+				font-size: 2em;
+				font-weight: 700;
+				padding: 2.5%;
+			}
+			h2{
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+			#wrapper{
+				width: 80.56640625%; /*target - 825px/1024px*/
+				margin: 0 auto;
+				background-color: #2F7366;
+			}
+			nav{
+				margin: 0 auto;
+				text-align: center;
+				justify-content: space-evenly;
+				background-color: #2F7366;
+				padding-top: .25%;
+			}
+			header{
+				background-color: #6DA398;
+				padding: .1%;
+				margin-bottom: .01%;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				color: #001511;
+				letter-spacing: .2em;
+			}
+			.nav-item{
+				margin-left: 0;
+				margin-right: 0;
+				display: inline-block;
+				border: 1px solid;
+				padding: .5% 8.74%;
+				margin-bottom: .25%;
+				font-weight: bold; 
+				justify-content: space-evenly;
+				font-size: 1em;
+				background-color: #2F3D3B;
+
+				
+			}
+			li.nav-item a:link{
+				color: #B4744A;
+			}
+			li.nav-item a:visited{
+				color: #8E4F26;
+			}
+			li.nav-item a:hover{
+				color: white;
+			}
+			li.nav-item a:active{
+				color: black;
+				text-align: center;
+			}
+			ul{ 
+				width: 100%; /*706/825*/
+				margin: 0 auto;
+				padding: 0;
+			}
+
+			#feature{
+				width: 81.3257575757575758%;
+				padding: .75% 2.25% 3.5% 2.25%;
+				margin: 0 auto;
+				margin-top: 0;
+				margin-bottom: 2%;
+				background-color: #6DA398;
+				overflow: hidden;
+				color: #001511;
+			}
+			.feature-img{
+				float: left;
+				width: 20%;
+				clear: left;
+			}
+			.feature-text, ol{
+				width: 65%;
+				padding: 1.5%;
+				font-size: 1.5em;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: .01em;
+			}
+			.feature-text, ol{
+			margin: 0 auto;
+			padding-left: 12%
+			}
+			#feature h2{ 
+				margin: 1% auto;
+				letter-spacing: .025em;
+				text-align: center;
+				padding-left: 10%
+				width: 30%;
+			}
+			#feature h2 {
+			margin: 1% auto;
+			letter-spacing: .025em;
+			text-align: center;
+			padding-left: 10%; /* Remove padding if it's conflicting */
+			width: 60%; /* Adjust the width as needed */
+			}
+			#feature ol{
+				clear: none;
+				text-align: center;
+			}
+			p{
+				margin: 1.5% 0%;
+				letter-spacing: .01em;
+				line-height: 120%;
+				text-align: center;
+				font-size: 1.5em;
+			}
+			#maincontent{
+				width:59.39393939394%; /*523/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			.main-figure{
+				width: 32.50478011472%; /*170/523*/
+				margin-right: 9.56022944551%; /*50/523*/
+				float: right;
+				max-width: 100%;
+				margin: 1% 0% 2.5% 3%;
+				
+			}
+			#sidebar{
+				width: 32.60606060606061%; /*302/825*/
+				float: left;
+				margin: 2%;
+				color: #F5F5DC;
+			}
+			#sidebar p{
+				padding-top: 4%;
+			}
+			#maincontent p{
+				padding-top: 4%;
+			}
+			.side-figure{
+				width: 88.07947019868%; /*266/302*/
+				margin: 0 auto;
+			}
+			figure img{
+				max-width: 100%;
+			}
+			figcaption{
+				padding: 3%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			figure{
+				background-color: #002A21;
+			}
+			footer{
+				clear: left;
+				background-color: red;
+				padding: .5% 0%;
+				text-align: center;
+				background-color: #6DA398;
+			}
+			body{
+				background-color: #202020;
+			}
+			figcaption{
+				font-size: .8em;
+			}
+			.clear{
+				clear: both;
+			}
+			#feature ol{
+				list-style-type: disc;
+				text-align: center;
+				margin: 1% auto;
+			#feature ol li{
+				margin-bottom 1%;
+
+			}
+
+		</style>
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Jackson Neighbors' Favorite Movies - Lost Highway</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="nav-item"><a href="finalwebpage1.html">page 1</a></li>
+				<li class="nav-item"><a href="finalwebpage2.html">page 2</a></li>
+				<li class="nav-item"><a href="finalwebpage4.html">page 4</a></li>
+				<li class="nav-item"><a href="finalwebpage5.html">page 5</a></li>
+			</ul>
+		</nav>
+		<div id="feature">
+			<h2>Lost Highway Poster and Synopsis</h2>
+			
+			<img src="losthighway.png" class="feature-img"/>
+			
+			<p class="feature-text">
+				From this inventory of imagery, Lynch fashions two separate but intersecting stories, one about a jazz musician, tortured by the notion that his wife is having an affair, who suddenly finds himself accused of her murder. The other is a young mechanic drawn into a web of deceit by a temptress who is cheating on her gangster boyfriend. These two tales are linked by the fact that the women in both are played by the same actress.
+			</p>
+				<h2>Other Lynch Works That I Love</h2>
+					<ol>
+						<li>Twin Peaks (1990)</li>
+						<li>Mulholland Drive (2001)</li>
+						<li>Blue Velvet (1986)</li>
+					</ol>	
+			
+		</div>
+		<div id="maincontent">
+			<article>
+			<h2>Movie Review</h2>
+			<figure class="main-figure">
+				<img src="circularpatricia.png"/>
+				<figcaption>
+					Patricia Arquette as, Alice Wakefield.
+				</figcaption>
+			</figure>
+			<p>
+				Lost Highway is a surreal, mind-bending thriller by David Lynch that pushes the boundaries of reality and perception. The story follows Fred Madison, a jazz musician who receives a strange videotape that seems to show his life unfolding in unsettling ways. As the film progresses, Lynch expertly blurs the lines between truth and illusion, taking the audience on a twisted journey through shifting identities, guilt, and the mysteries of the human psyche. The non-linear narrative keeps you on edge, making it hard to decipher what’s truly happening and what’s just a product of madness.
+			</p>
+			<p>
+				Bill Pullman delivers a haunting performance as Fred, portraying a man trapped in a nightmarish scenario, unable to escape his own unraveling mind. Patricia Arquette is equally captivating, playing multiple roles that heighten the film’s sense of mystery and disorientation. Their chemistry brings depth to the bizarre story, making you care about their fate even as the plot becomes more abstract and perplexing.
+			</p>
+			<p>
+				The film's atmosphere is further heightened by its dark, atmospheric soundtrack, featuring tracks from artists like David Bowie and Nine Inch Nails. The music blends seamlessly with Lynch’s striking visuals, creating a haunting mood that lingers long after the film ends. Lost Highway is a complex and eerie puzzle, one that will leave you thinking long after you've watched it, and it’s a perfect example of Lynch’s ability to make the strange feel utterly captivating.
+			</p>
+			</article>
+		</div>
+		<div id="sidebar">
+		<article>
+			<h2>Director</h2>
+			<figure class ="side-figure">
+				<img src="croppedlynch.png" />
+				<figcaption>
+					Lynch directing on the set of 'Muholland Drive.'
+				</figcaption>
+			</figure>
+			<p>
+				David Lynch is known for his surreal, unsettling films like Lost Highway and Mulholland Drive. His work often blends the bizarre with the real, creating a sense of mystery that draws you in. Lynch’s films explore deep, dark themes like identity and trauma, often leaving you with more questions than answers. His ability to craft strange, unforgettable visuals and eerie soundscapes keeps you hooked, making you feel as if you're stepping into a dream or nightmare.
+			</p>
+		</article>
+		</div>
+		<footer>
+			<p><small>Copyright Jackson Neighbors, 2025</small></p>
+		</footer>
+	</div>
+
+</body>
+</html>
